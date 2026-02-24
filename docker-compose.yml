@@ -1,0 +1,8 @@
+services:
+  converter:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+    stdin_open: true
+    tty: true
